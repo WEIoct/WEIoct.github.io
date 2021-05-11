@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    a:link {
+        color: #998822;
+        background-color: transparent;
+        text-decoration: underline;
+    }
+    a:hover {
+        color: red;
+        background-color: transparent;
+        text-decoration: underline;
+    }
+</style>
+<script type="text/javascript">
+    function time(){
+        var today = new Date();
+        var date = today.getDate();
+        var month = today.getMonth() + 1;
+        var year = today.getFullYear();
+        var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+        document.getElementById("datetime").innerHTML = month + '-' + date + '-' + year + ' ' + time;
+        setTimeout("time()",100)
+    }
+</script>
+<head>
+    <meta charset="UTF-8">
+    <title>Chloe's Personal Website</title>
+    <link rel="shortcut icon" type="image/png" href="photo/smile.png"/>
+</head>
+<body onload="time()">
+<audio src = "music/Chillout-downtempo-music-loop.mp3" autoplay loop>
+    <p>If you are reading this, it is because your browser does not support the audio element.</p>
+</audio>
+
+<p><span id="datetime"></span></p>
+<h2 style="color: #996600; text-align: center;">嗨！我是王瑋！</h2>
+<p><img style="display: block; margin-left: auto; margin-right: auto;" src="photo/me.jpeg" /></p>
+<h2 style="color: #805500; text-align: center;">About Me</h2>
+<p style="color: #4d3300; text-align: center;">我以前在：<a href="http://www.fg.tp.edu.tw/">北一女中</a><br />我現在在：<a href="https://www.ee.ntu.edu.tw/">台大電機</a></p>
+<h2 style="color: #805500; text-align: center;">More About Me</h2>
+<h3 style="color: #805500; text-align: center;">My Hobbies</h3>
+<p style="color: #4d3300;text-align: center;">烘焙：我的甜點帳號 <a href="https://www.instagram.com/homlonlon_bakery/">烘龍龍</a>
+    <br />音樂：<a href="https://www.instagram.com/tfgag7th/">北ㄧ民吉7th</a>
+    <br />吃美食！
+</p>
+
+</body>
+</html>
